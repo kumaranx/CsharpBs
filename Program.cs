@@ -106,14 +106,35 @@ Console.ForegroundColor = ConsoleColor.Gray;
 
 // LOOPS  -----------------------------------------------------------------------------------------------------------
 
-Console.Write("How many cool nos do u need ? ");
-Console.ForegroundColor = ConsoleColor.Cyan;
-int count = Convert.ToInt32(Console.ReadLine());
-Console.ForegroundColor = ConsoleColor.Yellow;
+// Console.Write("How many cool nos do u need ? ");
+// Console.ForegroundColor = ConsoleColor.Cyan;
+// int count = Convert.ToInt32(Console.ReadLine());
+// Console.ForegroundColor = ConsoleColor.Yellow;
 
-// FOR LOOP
-for (int z = 1; z <= count; z++)
+// // FOR LOOP
+// for (int z = 1; z <= count; z++)
+// {
+//   double result = Math.Pow(2, z);
+//   Console.WriteLine(result);
+// }
+
+// WHILE LOOP
+
+Random numGen = new Random();
+
+int roll1 = 0;
+int roll2 = 0;
+int attempts = 0;
+
+Console.WriteLine("Hit a key to keep the dice rolling!");
+while (roll1 + roll2 != 6)
 {
-  double result = Math.Pow(2, z);
-  Console.WriteLine(result);
+  Console.ReadKey();
+
+  roll1 = numGen.Next(1, 7);
+  roll2 = numGen.Next(1, 7);
+  Console.WriteLine("You rolled: " + roll1);
+  Console.WriteLine("You rolled: " + roll2);
+  attempts++;
 }
+Console.WriteLine("It took you " + attempts + " attempts to roll a six.");
