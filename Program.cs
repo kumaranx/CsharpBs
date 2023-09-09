@@ -53,25 +53,53 @@ Console.ForegroundColor = ConsoleColor.Gray;
 // Console.Write("Average of 3 nums: " + avgValue);
 
 // CONDITIONS -------------------------------------------------------------------------------------------------------
-Console.WriteLine("Tickets are 10$. Please insert cash.");
 
-int ticPrice = 10;
-int cash = Convert.ToInt32(Console.ReadLine());
+// TICKET COUNTER
+// Console.WriteLine("Tickets are 10$. Please insert cash.");
 
-if (cash < ticPrice)
-{
-  int insCash = ticPrice - cash;
-  Console.ForegroundColor = ConsoleColor.Magenta;
-  Console.WriteLine("Cash is not enough. Please insert the remaining cash: " + insCash + "$");
-}
-else if (cash > ticPrice)
-{
-  int remCash = cash - ticPrice;
-  Console.ForegroundColor = ConsoleColor.Magenta;
-  Console.WriteLine("Ouch, u have inserted extra cash.\nGrab ur tickets & remaining cash " + remCash + "$" + " from C2 at the SOFI Stadium");
-}
-else
-{
-  Console.ForegroundColor = ConsoleColor.Magenta;
-  Console.WriteLine("Great!, grab ur tickets from C1 at the SOFI Stadium");
-}
+// int ticPrice = 10;
+// int cash = Convert.ToInt32(Console.ReadLine());
+
+// if (cash < ticPrice)
+// {
+//   int insCash = ticPrice - cash;
+//   Console.ForegroundColor = ConsoleColor.Magenta;
+//   Console.WriteLine("Cash is not enough. Please insert the remaining cash: " + insCash + "$");
+// }
+// else if (cash > ticPrice)
+// {
+//   int remCash = cash - ticPrice;
+//   Console.ForegroundColor = ConsoleColor.Magenta;
+//   Console.WriteLine("Ouch, u have inserted extra cash.\nGrab ur tickets & remaining cash " + remCash + "$" + " from C2 at the SOFI Stadium");
+// }
+// else
+// {
+//   Console.ForegroundColor = ConsoleColor.Magenta;
+//   Console.WriteLine("Great!, grab ur tickets from C1 at the SOFI Stadium");
+// }
+
+// SWITCH-CASE STATEMENT
+// Console.Write("Input a number b/w 1 to 5: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+
+// switch (num)
+// {
+//   case 1:
+//     Console.WriteLine("One");
+//     break;
+//   case 2:
+//     Console.WriteLine("Two");
+//     break;
+//   case 3:
+//     Console.WriteLine("Three");
+//     break;
+//   case 4:
+//     Console.WriteLine("Four");
+//     break;
+//   case 5:
+//     Console.WriteLine("Five");
+//     break;
+//   default:
+//     Console.WriteLine("default " + num);
+//     break;
+// }
