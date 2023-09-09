@@ -103,3 +103,17 @@ Console.ForegroundColor = ConsoleColor.Gray;
 //     Console.WriteLine("default " + num);
 //     break;
 // }
+
+// LOOPS  -----------------------------------------------------------------------------------------------------------
+
+Console.Write("How many cool nos do u need ? ");
+Console.ForegroundColor = ConsoleColor.Cyan;
+int count = Convert.ToInt32(Console.ReadLine());
+Console.ForegroundColor = ConsoleColor.Yellow;
+
+// FOR LOOP
+for (int z = 1; z <= count; z++)
+{
+  double result = Math.Pow(2, z);
+  Console.WriteLine(result);
+}
